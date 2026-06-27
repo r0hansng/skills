@@ -131,7 +131,7 @@ It captures:
 
 It prevents context loss between sessions.
 
-How to Use
+#### How to Use
 
 ```
 /architect  →  Build  →  /review  →  Ship
@@ -141,7 +141,7 @@ How to Use
 /recover   (when something breaks)
 ```
 
-Skill Interaction Rules
+#### Skill Interaction Rules
 * /architect → prevents incorrect builds
 * /recover → fixes failure classification before action
 * /review → validates correctness after implementation
@@ -150,7 +150,7 @@ Skill Interaction Rules
 
 Each skill solves a different failure mode. They are not interchangeable.
 
-Output Artifacts
+#### Output Artifacts
 
 Some skills generate persistent files:
 
