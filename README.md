@@ -154,10 +154,10 @@ Output Artifacts
 
 Some skills generate persistent files:
 
-/architect → implementation plan (in-session reference)
-/review → structured review report
-/imprint → design-registry.md
-/remember → memory.md
+* /architect → implementation plan (in-session reference)
+* /review → structured review report
+* /imprint → design-registry.md
+* /remember → memory.md
 Why This Exists
 
 AI does not fail because it cannot write code.
