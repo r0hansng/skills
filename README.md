@@ -131,7 +131,7 @@ It captures:
 
 It prevents context loss between sessions.
 
-The Engineering Loop
+How to Use
 
 ```
 /architect  →  Build  →  /review  →  Ship
@@ -142,11 +142,11 @@ The Engineering Loop
 ```
 
 Skill Interaction Rules
-/architect → prevents incorrect builds
-/recover → fixes failure classification before action
-/review → validates correctness after implementation
-/imprint → enforces UI consistency across time
-/remember → preserves state across sessions
+* /architect → prevents incorrect builds
+* /recover → fixes failure classification before action
+* /review → validates correctness after implementation
+* /imprint → enforces UI consistency across time
+* /remember → preserves state across sessions
 
 Each skill solves a different failure mode. They are not interchangeable.
 
