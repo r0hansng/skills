@@ -169,38 +169,3 @@ It fails because:
 * it does not evaluate correctness beyond execution
 * it does not preserve design consistency
 * it does not retain memory across sessions
-
-This toolkit restores those missing constraints.
-
-Installation Principle
-
-These skills are not a library.
-
-They are a discipline layer on top of AI-assisted development.
-
-They work best when used consistently, not selectively.
-
-A skill used occasionally is not a system. It is a suggestion.
-
-Minimal Operating Rules
-
-If you remember nothing else:
-
-Plan before building → /architect
-Diagnose before fixing → /recover
-Verify after building → /review
-Maintain consistency → /imprint
-Persist context → /remember
-Outcome
-
-When used correctly, this system produces:
-
-fewer incorrect implementations
-reduced debugging cycles
-consistent architectural decisions
-stable UI design systems
-continuity across sessions
-
-It does not make AI faster.
-
-It makes AI disciplined.
