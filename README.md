@@ -35,13 +35,11 @@ If distributed as a package:
 npx skills@latest add your-org/skills
 ```
 
-Or manually include the SKILL.md definitions in your agent configuration.
-
 ---
 
 ## Skills
 
-### /architect
+### `/architect`
 
 Use before building anything.
 
@@ -56,7 +54,7 @@ It:
 
 This is a collaborative engineering thinking step, not a specification exercise.
 
-### /recover
+### `/recover`
 
 Use when something breaks during development.
 
@@ -69,7 +67,7 @@ This skill classifies failures into:
 
 It prevents endless debugging loops and forces correct recovery strategy selection.
 
-### /review
+### `/review`
 
 Use after building a feature.
 
@@ -88,7 +86,7 @@ It explicitly separates:
 
 It does not fix issues — it reports them so the developer decides.
 
-### /imprint
+### `/imprint`
 
 Use after building any UI component.
 
@@ -109,7 +107,7 @@ Output is written to design-registry.md.
 
 This ensures that every future component is built using the same visual logic.
 
-### /remember
+### `/remember`
 
 Use at the start and end of every session.
 
@@ -118,8 +116,8 @@ This skill provides session persistence for stateless AI systems.
 It creates continuity across conversations by externalizing memory.
 
 Commands
-* /remember save → stores current session state into memory.md
-* /remember restore → restores previous session context before continuing
+* `/remember save` → stores current session state into memory.md
+* `/remember restore` → restores previous session context before continuing
 
 It captures:
 
@@ -142,11 +140,11 @@ It prevents context loss between sessions.
 ```
 
 #### Skill Interaction Rules
-* /architect → prevents incorrect builds
-* /recover → fixes failure classification before action
-* /review → validates correctness after implementation
-* /imprint → enforces UI consistency across time
-* /remember → preserves state across sessions
+- `/architect` → prevents incorrect builds
+- `/recover` → fixes failure classification before action
+- `/review` → validates correctness after implementation
+- `/imprint` → enforces UI consistency across time
+- `/remember` → preserves state across sessions
 
 Each skill solves a different failure mode. They are not interchangeable.
 
@@ -154,18 +152,7 @@ Each skill solves a different failure mode. They are not interchangeable.
 
 Some skills generate persistent files:
 
-* /architect → implementation plan (in-session reference)
-* /review → structured review report
-* /imprint → design-registry.md
-* /remember → memory.md
-Why This Exists
-
-AI does not fail because it cannot write code.
-
-It fails because:
-
-* it does not know when to stop and plan
-* it does not diagnose failure modes correctly
-* it does not evaluate correctness beyond execution
-* it does not preserve design consistency
-* it does not retain memory across sessions
+* `/architect` → implementation plan (in-session reference)
+* `/review` → structured review report
+* `/imprint` → design-registry.md
+* `/remember` → memory.md
